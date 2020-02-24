@@ -57,9 +57,16 @@ namespace ConsoleApp1
                         Console.WriteLine(a.GetType().ToString());
             */
 
-
+            /*
             Rysownik.Test(new Kwadrat(4));
+             */
 
+            PodstepnyBankier podstepny = new PodstepnyBankier("Jan");
+            Console.WriteLine("podstępny"+podstepny.Licz(1, 2));
+
+            UczciwyBankier bankier = new UczciwyBankier("Aleksander");
+            Console.WriteLine("uczciwy"+bankier.Licz(1, 2));
+               
 
 
 
