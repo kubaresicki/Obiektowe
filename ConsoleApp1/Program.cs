@@ -59,17 +59,27 @@ namespace ConsoleApp1
 
             /*
             Rysownik.Test(new Kwadrat(4));
-             */
+             
 
+            Punkt p = new Punkt(53, 87);
+            Punkt q = new Punkt(-3, -81);
+            Console.WriteLine(p + q);
+            Console.WriteLine(p - q);
+            Console.ReadLine();
+            
             PodstepnyBankier podstepny = new PodstepnyBankier("Jan");
             Console.WriteLine("podstępny"+podstepny.Licz(1, 2));
 
             UczciwyBankier bankier = new UczciwyBankier("Aleksander");
             Console.WriteLine("uczciwy"+bankier.Licz(1, 2));
-               
+              */
 
-
-
+            int[] tab = new int[] { 1, 2, 3, 4, 5, 6 };
+            Wektor w = new Wektor(tab);
+            int[] tab1 = new int[] { 0, 1, 2, 3, 4, 5 };
+            Wektor w1 = new Wektor(tab1);
+            Console.WriteLine(w + w1);
+            Console.WriteLine(w * w1);
         }
     }
 }
